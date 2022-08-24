@@ -7,4 +7,6 @@ services:
       target: builder
     volumes: 
       - ./:/go/src
+    env_file:
+      - .env
     tty: true
